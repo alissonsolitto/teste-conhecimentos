@@ -1,0 +1,56 @@
+﻿@model Domain.Two.Models.DadosCalcularJurosModel
+@{
+    ViewData["Title"] = "Calcular Rendimentos";
+}
+
+@section Scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#valorInicial").maskMoney({ allowNegative: true, thousands: '.', decimal: ',', affixesStay: false });
+        });
+    </script>
+}
+
+<div class="card border-primary">
+    <h4 class="card-header border-primary bg-transparent">
+        Taxa de juros atual:
+    </h4>
+    <div class="card-body">
+        <form asp-controller="Home" method="POST">
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label>Valor investimento inicial</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">R$</span>
+                        </div>
+                        <input id="valorInicial" type="text" asp-for="ValorInicial" class="form-control" required>
+                    </div>
+                    <div>
+                        <span asp-validation-for="ValorInicial" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Quantidade de meses</label>
+                    <input type="number" asp-for="Meses" class="form-control" maxlength="9999" required>
+                    <div>
+                        <span asp-validation-for="Meses" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-right">
+                <button class="btn btn-primary" type="submit">Calcular</button>
+            </div>
+        </form>
+    </div>
+    <div class="card-footer text-muted">
+        @if (ViewBag.MessageError != null)
+        {
+            <span class="text-danger">Ops.. ocorreu um erro: @ViewBag.MessageError</span>
+        }
+        else if (ViewBag.ValorInvestimentoFinal != null)
+        {
+            <span class="text-success">Valor acumulado após @Model?.Meses mese(s): @ViewBag.ValorInvestimentoFinal</span>
+        }
+    </div>
+</div>

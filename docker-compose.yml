@@ -1,0 +1,43 @@
+version: '3.4'
+
+services:
+  api.one:
+    image: apione:dev
+    build:
+      context: .
+      dockerfile: src/Application/Microservices/Api.One/Dockerfile
+    container_name: Api.One
+    ports:
+      - "5001:80"        
+    restart:
+      on-failure
+  api.two:
+    image: apitwo:dev
+    build:
+      context: .
+      dockerfile: src/Application/Microservices/Api.Two/Dockerfile
+    container_name: Api.Two
+    ports:
+      - "5002:80"    
+    restart:
+      on-failure
+  gateway.ocelot:
+    image: gateway:dev
+    build:
+      context: .
+      dockerfile: src/Application/Gateway/Gateway.Ocelot/Dockerfile
+    container_name: Gateway.Ocelot    
+    ports:
+      - "5000:80"    
+    restart:
+      on-failure
+  web.app:
+    image: webapp:dev
+    build:
+      context: .
+      dockerfile: src/Application/WebApplication/Web.App/Dockerfile
+    container_name: Web.App
+    ports:
+      - "8080:80"
+    restart:
+      on-failure      
