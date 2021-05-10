@@ -16,7 +16,7 @@ namespace Api.One.Tests.Integration
             httpClientTwo = factoryTwo.CreateClient();
         }
 
-        [Theory]
+        [Theory (Skip = "Git Actions - Precisa da Api.One em execução.")]
         [InlineData(1200, 12, 1352.19)]
         [InlineData(2000, 12, 2253.65)]
         [InlineData(1000, 5, 1051.01)]
@@ -34,7 +34,7 @@ namespace Api.One.Tests.Integration
             Assert.Empty(result.Validators);
         }
 
-        [Theory]
+        [Theory(Skip = "Git Actions - Precisa da Api.One em execução.")]
         [InlineData(0, 0, 0)]
         [InlineData(-1, 0, 0)]
         [InlineData(5, 0, 0)]
