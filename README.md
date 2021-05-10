@@ -1,6 +1,6 @@
 #Arquitetura do Projeto
 
-![Arquitetura do Projeto](https://github.com/alissonsolitto/teste-conhecimentos/blob/main/docs/arquitetura.png?raw=true"Arquitetura")
+![Arquitetura do Projeto](https://github.com/alissonsolitto/teste-conhecimentos/blob/main/docs/arquitetura.jpg?raw=true"Arquitetura")
 
 A arquitetura do projeto em composta por quatro aplicações:
 - Api.One
@@ -71,5 +71,5 @@ Todos os projetos agrupados em **Application** e **Domain** possuem testes de su
 # Docker
 Todos os projetos agrupados em **Application** possuem o arquivo Dockerfile para geração de suas respectivas imagens.
 Na raiz da solução existe o arquivo **docker-compose.yml** que configura todos os containers para a execução. 
-*Ao iniciar o ambiente verificar as configurações de endereçamento de cada aplicações no appsettings.json.
-*
+
+*Ao iniciar o ambiente verificar as configurações de endereçamento de cada aplicações no appsettings.json.*
