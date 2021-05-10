@@ -1,6 +1,6 @@
 #Arquitetura do Projeto
 
-<IMAGEM>
+![Arquitetura do Projeto](https://github.com/alissonsolitto/teste-conhecimentos/blob/main/docs/arquitetura.png?raw=true"Arquitetura")
 
 A arquitetura do projeto em composta por quatro aplicações:
 - Api.One
@@ -19,12 +19,14 @@ O segundo endpoint **/showmethecode** retorna a url deste diretório do github.
 O Gateway é uma camada responsável por unificar o ponto de entrada na comunicação entre o Web.App e os microserviços.
 
 ## Web.App
+
+![Web.App](https://github.com/alissonsolitto/teste-conhecimentos/blob/main/docs/web-app.png?raw=true"Arquitetura")
+
 Aplicação criada em Asp.Net Core com o objetivo de implementar as funcionalidades dos microserviços criados.
 
 #Arquitetura da Solução
 
-<IMAGEM>
-
+![Arquitetura da Solução](https://github.com/alissonsolitto/teste-conhecimentos/blob/main/docs/estrutura-codigo-fonte.png?raw=true"Arquitetura")
 ## Api.One e Api.Two
 
 Os microserviços **Api.One** e **Api.Two** possuem algumas caracteristicas em comum em suas implementações:
@@ -59,7 +61,7 @@ Biblioteca para compartilhamento comum de implementações utilizadas nos micros
 
 ## Tests
 
-<IMAGEM>
+![Testes OK](https://github.com/alissonsolitto/teste-conhecimentos/blob/main/docs/testes-ok.png?raw=true"Arquitetura")
 
 Os projetos de testes foram criados utilizam XUnit e possuem testes de integração e de unidade de acordo com as aplicações criadas.
 Todos os projetos agrupados em **Application** e **Domain** possuem testes de suas respectivas funcionalidades.
