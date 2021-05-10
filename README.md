@@ -4,7 +4,7 @@
 
 ![Arquitetura do Projeto](https://github.com/alissonsolitto/teste-conhecimentos/blob/main/docs/arquitetura.png?raw=true"Arquitetura")
 
-A arquitetura do projeto em composta por quatro aplicações:
+A arquitetura do projeto é composta por quatro aplicações descritas abaixo:
 - Api.One
 - Api.Two
 - Gateway.Ocelot
