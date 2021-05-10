@@ -1,4 +1,4 @@
-#Arquitetura do Projeto
+# Arquitetura do Projeto
 
 ![Arquitetura do Projeto](https://github.com/alissonsolitto/teste-conhecimentos/blob/main/docs/arquitetura.jpg?raw=true"Arquitetura")
 
@@ -24,7 +24,7 @@ O Gateway é uma camada responsável por unificar o ponto de entrada na comunica
 
 Aplicação criada em Asp.Net Core com o objetivo de implementar as funcionalidades dos microserviços criados.
 
-#Arquitetura da Solução
+# Arquitetura da Solução
 
 ![Arquitetura da Solução](https://github.com/alissonsolitto/teste-conhecimentos/blob/main/docs/estrutura-codigo-fonte.png?raw=true"Arquitetura")
 ## Api.One e Api.Two
