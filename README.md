@@ -1,3 +1,5 @@
+[![Solution Build and Test](https://github.com/alissonsolitto/teste-conhecimentos/actions/workflows/dotnet.yml/badge.svg)](https://github.com/alissonsolitto/teste-conhecimentos/actions/workflows/dotnet.yml)
+
 # Arquitetura do Projeto
 
 ![Arquitetura do Projeto](https://github.com/alissonsolitto/teste-conhecimentos/blob/main/docs/arquitetura.jpg?raw=true"Arquitetura")
