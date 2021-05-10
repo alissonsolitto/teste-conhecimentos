@@ -2,7 +2,7 @@
 
 # Arquitetura do Projeto
 
-![Arquitetura do Projeto](https://github.com/alissonsolitto/teste-conhecimentos/blob/main/docs/arquitetura.jpg?raw=true"Arquitetura")
+![Arquitetura do Projeto](https://github.com/alissonsolitto/teste-conhecimentos/blob/main/docs/arquitetura.png?raw=true"Arquitetura")
 
 A arquitetura do projeto em composta por quatro aplicações:
 - Api.One
